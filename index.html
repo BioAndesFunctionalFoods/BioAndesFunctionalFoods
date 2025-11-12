@@ -1,209 +1,206 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BioAndes Foods — Oxydent BioActive</title>
-  <meta name="description" content="BioAndes Foods: empresa peruana productora de alimentos funcionales naturales. Conoce Oxydent BioActive, chicle funcional con insumos andinos.">
-  <style>
-    :root {
-      --verde: #6ecb63;
-      --rosa: #f8a6c4;
-      --amarillo: #fdd85d;
-      --gris: #333;
-      --blanco: #ffffff;
-      --maxw: 1100px;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: var(--blanco);
-      color: var(--gris);
-      line-height: 1.7;
-    }
-
-    .container { max-width: var(--maxw); margin: auto; padding: 20px; }
-
-    header {
-      text-align: center;
-      padding: 40px 0 20px;
-    }
-
-    header img {
-      width: 180px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-
-    header h1 {
-      color: var(--verde);
-      font-size: 2rem;
-      font-weight: 700;
-    }
-
-    section {
-      padding: 40px 20px;
-      border-bottom: 3px solid var(--rosa);
-    }
-
-    section h2 {
-      color: var(--verde);
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    section p, li {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      margin: 15px 0 0 20px;
-    }
-
-    .logo-producto {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .logo-producto img {
-      width: 250px;
-      border-radius: 12px;
-    }
-
-    .slogan {
-      color: var(--amarillo);
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-top: 8px;
-    }
-
-    .card {
-      background: linear-gradient(180deg, #fff6f9, #f9fff6);
-      border-radius: 16px;
-      padding: 20px;
-      margin: 20px auto;
-      border: 2px solid var(--verde);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    footer {
-      background: var(--verde);
-      color: var(--blanco);
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
-
-    a {
-      color: var(--rosa);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    @media (max-width: 768px) {
-      header img { width: 140px; }
-      section h2 { font-size: 1.4rem; }
-    }
-  </style>
-</head>
 <body>
-  <div class="container">
-    <!-- Encabezado principal -->
-    <header>
+  <div class="layout">
+    <!-- Columna Izquierda: Encabezado fijo -->
+    <aside class="sidebar">
       <img src="logo-bioandes.png" alt="Logo BioAndes Foods">
-      <h1>BioAndes Functional Foods S.A.C.</h1>
-      <p><strong>Alimentos funcionales naturales del Perú</strong></p>
-    </header>
+      <h1>BioAndes<br>Functional Foods</h1>
+      <p class="slogan-lateral">Alimentos funcionales naturales del Perú</p>
+      <nav>
+        <a href="#empresa">Sobre Nosotros</a>
+        <a href="#producto">Oxydent BioActive</a>
+        <a href="#mercado">Mercado Colombiano</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </aside>
 
-    <!-- Sección sobre la empresa -->
-    <section id="empresa">
-      <h2>Sobre Nosotros</h2>
-      <div class="card">
-        <p><strong>Razón social:</strong> BioAndes Functional Foods Sociedad Anónima Cerrada</p>
-        <p><strong>Ubicación:</strong> Km 57.5 Panamericana Sur, Lote 14–B, Zona Industrial de Pucusana, Lima – Perú</p>
-        <p><strong>Teléfono:</strong> +51 1 635 4821</p>
-        <p><strong>Correo:</strong> contacto@bioandesfoods.com</p>
-        <p><strong>Misión:</strong> Producir alimentos funcionales innovadores que promuevan el bienestar digestivo y bucal, utilizando insumos naturales del Perú y tecnologías sostenibles.</p>
-        <p><strong>Visión:</strong> Ser una empresa referente en exportación de alimentos funcionales naturales desde el Perú hacia mercados internacionales, destacando por la innovación, la calidad y el uso de materias primas andinas.</p>
+    <!-- Columna Derecha: Contenido desplazable -->
+    <main class="contenido">
+      <section id="empresa">
+        <h2>Sobre Nosotros</h2>
+        <div class="card">
+          <p><strong>Razón social:</strong> BioAndes Functional Foods S.A.C.</p>
+          <p><strong>Ubicación:</strong> Km 57.5 Panamericana Sur, Lote 14–B, Zona Industrial de Pucusana, Lima – Perú</p>
+          <p><strong>Teléfono:</strong> +51 1 635 4821</p>
+          <p><strong>Correo:</strong> contacto@bioandesfoods.com</p>
+          <p><strong>Misión:</strong> Producir alimentos funcionales innovadores que promuevan el bienestar digestivo y bucal, utilizando insumos naturales del Perú y tecnologías sostenibles.</p>
+          <p><strong>Visión:</strong> Ser una empresa referente en exportación de alimentos funcionales naturales desde el Perú hacia mercados internacionales, destacando por la innovación, la calidad y el uso de materias primas andinas.</p>
+        </div>
+      </section>
 
-        <p><strong>Valores:</strong></p>
-        <ul>
-          <li>Innovación: productos funcionales únicos como Oxydent BioActive.</li>
-          <li>Calidad: cumplimiento de BPM e inocuidad.</li>
-          <li>Sostenibilidad: insumos naturales y materiales biodegradables.</li>
-          <li>Identidad: uso de insumos andinos como Yacón, Camu Camu y Tarwi.</li>
-          <li>Responsabilidad y superación constante.</li>
-        </ul>
-      </div>
-    </section>
+      <section id="producto">
+        <h2>Oxydent BioActive</h2>
+        <div class="card">
+          <img src="oxydent-bioactive.jpeg" alt="Oxydent BioActive" class="producto-img">
+          <p><strong>Descripción:</strong> Oxydent BioActive es un chicle funcional natural que combina beneficios digestivos y bucales en un solo producto. Elaborado con extractos de Yacón, Camu Camu y Tarwi, ofrece una experiencia saludable, práctica y moderna.</p>
+          <ul>
+            <li>Previene bacterias causantes de caries y regula el pH bucal.</li>
+            <li>Favorece la digestión gracias a sus prebióticos naturales.</li>
+            <li>Envase reciclable de polipropileno grado alimentario.</li>
+          </ul>
+          <p class="slogan">“Equilibrio divertido y digestivo”</p>
+        </div>
+      </section>
 
-    <!-- Sección del producto -->
-    <section id="producto">
-      <h2>Oxydent BioActive</h2>
-      <div class="logo-producto">
-        <img src="oxydent-bioactive.jpeg" alt="Logo Oxydent BioActive">
-        <div class="slogan">“Equilibrio divertido y digestivo”</div>
-      </div>
+      <section id="mercado">
+        <h2>Datos del Mercado Colombiano</h2>
+        <div class="card">
+          <p>El sector de confitería en Colombia presenta una fuerte concentración en Bogotá y Valle del Cauca (63.7% del total nacional), convirtiéndose en los principales centros de producción y consumo.</p>
+          <ul>
+            <li><strong>76%</strong> de los colombianos consume dulces regularmente.</li>
+            <li><strong>36.6%</strong> lo hace diariamente.</li>
+            <li>Potencial en productos saludables y funcionales.</li>
+          </ul>
+          <p class="fuente">Fuentes: DNP (2018); Revista iAlimentos (2023).</p>
+        </div>
+      </section>
 
-      <div class="card">
-        <p><strong>Descripción:</strong> Oxydent BioActive es un chicle funcional natural que combina beneficios digestivos y bucales en un solo producto. Elaborado con extractos de Yacón, Camu Camu y Tarwi, ofrece una experiencia saludable, práctica y moderna.</p>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="card">
+          <p><strong>Correo:</strong> contacto@bioandesfoods.com</p>
+          <p><strong>Teléfono:</strong> +51 1 635 4821</p>
+          <p><strong>Dirección:</strong> Km 57.5 Panamericana Sur, Lote 14–B, Zona Industrial de Pucusana, Lima – Perú</p>
+        </div>
+      </section>
 
-        <p><strong>Presentación:</strong> cápsulas tipo grajea con centro blando funcional. Cada envase contiene 50 unidades (65 g netos) en envase de polipropileno grado alimentario, reciclable y resistente.</p>
-
-        <p><strong>Beneficios principales:</strong></p>
-        <ul>
-          <li>Previene bacterias causantes de caries y regula el pH bucal.</li>
-          <li>Favorece la digestión gracias a sus prebióticos naturales.</li>
-          <li>Portátil, práctico y 100 % comestible.</li>
-          <li>Sin azúcares refinados ni polímeros sintéticos.</li>
-          <li>Uso de insumos andinos sostenibles.</li>
-        </ul>
-
-        <p><strong>Ingredientes activos:</strong> goma base vegetal, xilitol, extractos de Yacón, Camu Camu y Tarwi, aceites esenciales de menta y eucalipto, glicerina vegetal y pectinas naturales.</p>
-
-        <p><strong>Respaldo científico:</strong> Basado en los estudios de Núñez Serpa (2018) y Oñate Perpiñán (2023), que demuestran los efectos positivos del xilitol y del yacón en la salud bucal y digestiva.</p>
-      </div>
-    </section>
-
-    <!-- Datos del mercado colombiano -->
-    <section id="mercado">
-      <h2>Datos del Mercado Colombiano</h2>
-      <div class="card">
-        <p>El sector de confitería en Colombia presenta una fuerte concentración geográfica en Bogotá y Valle del Cauca (63.7% del total nacional), lo que convierte a estas regiones en los principales centros de producción y consumo.</p>
-
-        <ul>
-          <li><strong>76 %</strong> de los colombianos consume dulces regularmente.</li>
-          <li><strong>36.6 %</strong> lo hace diariamente.</li>
-          <li>Las categorías de chicles y mentas muestran leve retroceso, pero con potencial de diferenciación hacia productos saludables y funcionales.</li>
-          <li>Los consumidores buscan productos con beneficios reales, naturales y sostenibles.</li>
-        </ul>
-
-        <p style="font-size:0.9rem;color:#555;margin-top:10px;">
-          <em>Fuentes: Dirección de Estudios Económicos — DNP (2018); Revista iAlimentos (2023).</em>
-        </p>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <div class="card" style="text-align:center;">
-        <p><strong>Correo:</strong> contacto@bioandesfoods.com</p>
-        <p><strong>Teléfono:</strong> +51 1 635 4821</p>
-        <p><strong>Dirección:</strong> Km 57.5 Panamericana Sur, Lote 14–B, Zona Industrial de Pucusana, Lima – Perú</p>
-      </div>
-    </section>
-
-    <!-- Pie de página -->
-    <footer>
-      © 2025 BioAndes Functional Foods S.A.C. — Alimentos funcionales naturales del Perú
-    </footer>
+      <footer>
+        © 2025 BioAndes Functional Foods S.A.C.  
+      </footer>
+    </main>
   </div>
 </body>
-</html>
+🟨 2️⃣ Ahora reemplaza tu <style> por este nuevo CSS
+Este código crea el diseño dividido y aplica los colores verde, rosa y amarillo de BioAndes.
+
+html
+Copiar código
+<style>
+  :root {
+    --verde: #6ecb63;
+    --verde-oscuro: #0c3b2e;
+    --rosa: #f8a6c4;
+    --amarillo: #fdd85d;
+    --blanco: #ffffff;
+    --gris: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .layout {
+    display: flex;
+    width: 100%;
+  }
+
+  /* Columna izquierda */
+  .sidebar {
+    background: linear-gradient(180deg, var(--verde-oscuro), var(--verde));
+    color: white;
+    width: 30%;
+    padding: 40px 20px;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidebar img {
+    width: 160px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+
+  .sidebar h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .slogan-lateral {
+    color: var(--amarillo);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  .sidebar nav a:hover {
+    color: var(--amarillo);
+  }
+
+  /* Columna derecha (contenido) */
+  .contenido {
+    margin-left: 30%;
+    width: 70%;
+    height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #fffafc, #f6fff5, #fffbe8);
+    padding: 40px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    color: var(--verde-oscuro);
+    border-bottom: 3px solid var(--amarillo);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .producto-img {
+    width: 220px;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .slogan {
+    color: var(--amarillo);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--gris);
+    font-size: 0.9rem;
+    padding: 20px 0;
+    border-top: 2px solid var(--verde);
+  }
+
+  /* Scroll bonito */
+  .contenido::-webkit-scrollbar {
+    width: 10px;
+  }
+  .contenido::-webkit-scrollbar-thumb {
+    background: var(--verde);
+    border-radius: 5px;
+  }
+  .contenido::-webkit-scrollbar-thumb:hover {
+    background: var(--amarillo);
+  }
+</style>
